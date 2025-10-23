@@ -26,7 +26,7 @@ const Signup = () => {
   }
 
   try {
-    const url = "http://localhost:8080/auth/signup";
+    const url = "https://auth-app-backend-hupf.onrender.com/auth/signup";
     const response = await fetch(url, {
       method: "POST",
       headers: {
