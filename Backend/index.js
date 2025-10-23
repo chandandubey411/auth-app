@@ -12,14 +12,7 @@ app.get('/ping',(req,res)=>{
     res.send('pong');
 })
 app.use(bodyparsor.json());
-const corsOptions = {
-  origin: 'https://auth-app-frontend-enw7.onrender.com',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
-};
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
+app.use(cors());
 app.use('/auth', AuthRouter)
 app.use('/products', productRouter)
 
