@@ -25,7 +25,7 @@ const Login = () => {
   }
 
   try {
-    const url = "https://auth-app-backend-hupf.onrender.com/login";
+    const url = "https://auth-app-backend-hupf.onrender.com/auth/login";
     const response = await fetch(url, {
       method: "POST",
       headers: {
