@@ -55,7 +55,7 @@ const Signup = () => {
     }
 
     else if (!success) {
-      handleSuccess(message);
+      handleError(message);
     }
 
   } catch (err) {

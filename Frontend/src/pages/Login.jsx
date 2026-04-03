@@ -56,7 +56,7 @@ const Login = () => {
     }
 
     else if (!success) {
-      handleSuccess(message);
+      handleError(message);
     }
 
   } catch (err) {
