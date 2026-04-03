@@ -11,8 +11,9 @@ const productRouter = require('./routes/ProductRouter')
 app.get('/ping',(req,res)=>{
     res.send('pong');
 })
-app.use(bodyparsor.json());
+
 app.use(cors());
+app.use(bodyparsor.json());
 app.use('/auth', AuthRouter)
 app.use('/products', productRouter)
 
